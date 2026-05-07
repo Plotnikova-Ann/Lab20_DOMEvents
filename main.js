@@ -26,5 +26,11 @@ button.addEventListener("click", () => {
         } else {
             output.textContent = "Пожалуйста, введите имя!";
             output.style.color = "red";
+            input.focus();
         }
     });
+ const clearButton = document.getElementById("clearButton");
+ clearButton.addEventListener("click", () => {
+    input.value = "";
+    output.textContent = "";
+});   
